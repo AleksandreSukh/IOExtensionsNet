@@ -47,6 +47,7 @@ namespace IOExtensionsNet
             foreach (var subdir in dirs)
                 CopyAllFiles(subdir.FullName, Path.Combine(destDir, subdir.Name), excludedFileTypes, excludedFileNames);
         }
+        //TODO:Refactor take this to Utils
         public static bool ContainsIgnoreCaseInvariant(this string string2Check, string containsString)
         {
             if (string2Check == null || containsString == null)
